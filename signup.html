@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up - Court Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Create Account</h1>
+    <input type="email" id="signupEmail" placeholder="Email" />
+    <input type="password" id="signupPassword" placeholder="Password" />
+    <button class="signup" onclick="signup()">Sign Up</button>
+    <p class="link-text">Already have an account? <a href="login.html">Log in here</a></p>
+    <p id="signupMessage" class="message"></p>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth-compat.js"></script>
+  <script src="auth.js"></script>
+</body>
+</html>

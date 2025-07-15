@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.container {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Button styles */
+button.login, button.signup {
+  background-color: #007bff;
+  color: white;
+}
+button.login:hover, button.signup:hover {
+  background-color: #0069d9;
+}
+
+button.checkin {
+  background-color: #28c76f;
+  color: white;
+}
+button.checkin:hover {
+  background-color: #22bb61;
+}
+
+button.checkout {
+  background-color: #ffa94d;
+  color: white;
+}
+button.checkout:hover {
+  background-color: #ff922b;
+}
+
+button.logout {
+  background-color: #f06565;
+  color: white;
+}
+button.logout:hover {
+  background-color: #e04848;
+}
+
+.link-text {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.message {
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.message.error {
+  color: red;
+}
+
+.message.success {
+  color: green;
+}
+
+#courtCount {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 20px 0 10px;
+}
+
+#courtCount .in-use {
+  color: #d63031;
+}
+
+#courtCount .available {
+  color: #00b894;
+}
+
+#userStatus,
+#userCheckins {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+
+  button {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  #courtCount {
+    font-size: 22px;
+  }
+}
